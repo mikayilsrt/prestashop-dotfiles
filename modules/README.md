@@ -22,6 +22,8 @@ ALTER TABLE `ps_category` DROP `field_name`;
 ### Hook
 ---
 
+List of all PrestaShop Hooks [here](https://devdocs.prestashop.com/1.7/modules/concepts/hooks/list-of-hooks/)
+
 This **example** add a new text input named field_name in Category form.
 
 ```php
