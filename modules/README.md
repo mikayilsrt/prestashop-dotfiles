@@ -52,3 +52,33 @@ private function updateData(array $data)
     $category->save();
 }
 ```
+
+### Override classes
+
+After added your custom column in DB table you should override the specific classes.
+
+To override a class you should create **override/classes** folders and **Category.php** file.
+
+- 📂 folders your_module
+    - 📂 override
+        - 📂 classes
+            - 📄 Category.php
+
+```php
+class Category extends CategoryCore
+{
+    public $field_name;
+
+    public function __construct($idCategory = null, $idLang = null, $idShop = null)
+    {
+        self::$definition['fields']['field_name'] = [
+            'type' => self::TYPE_STRING,
+            'validation' => 'isGenericName',
+            'size' => 255
+        ];
+
+        parent::__construct($idCategory, $idLang, $idShop);
+    }
+}
+```
+- **self::$definition['fields']['field_name']** add field_name array in CategoryCore::$definition array.
