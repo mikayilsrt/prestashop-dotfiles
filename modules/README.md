@@ -16,7 +16,7 @@ ALTER TABLE `ps_category` ADD `field_name` VARCHAR(255);
 
 To remove a column
 ```sql
-ALTER TABLE `ps_category` DROP `color`;
+ALTER TABLE `ps_category` DROP `field_name`;
 ```
 
 ### Hook
