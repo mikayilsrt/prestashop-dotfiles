@@ -55,7 +55,7 @@ private function updateData(array $data)
 }
 ```
 
-### Override classes
+### Override (classes)
 
 After added your custom column in DB table you should override the specific classes.
 
