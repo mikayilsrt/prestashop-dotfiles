@@ -22,7 +22,7 @@ public function hookActionCategoryformBuilderModifier(array $params)
 
 - **$formBuilder** is a instance of \Symfony\Component\Form\FormBuilder
 - **$formBuilder->add($name, $type = null, $options = [])** add a new field in category form.
-- **$formBuilder->setData()** This function update the category form datas.
+- **$formBuilder->setData($params['data'])** This function update the category form datas.
 
 This function is called in action hook to save the new input value in ps_category table.
 
