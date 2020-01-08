@@ -4,6 +4,24 @@
 
 To add a new field in your back office with Symfony you should create a new module.
 
+### SQL
+---
+
+In your module you should add a new column in ps_category table.
+
+To add a column
+```sql
+ALTER TABLE `ps_category` ADD `field_name` VARCHAR(255);
+```
+
+To remove a column
+```sql
+ALTER TABLE `ps_category` DROP `color`;
+```
+
+### Hook
+---
+
 This **example** add a new text input named field_name in Category form.
 
 ```php
