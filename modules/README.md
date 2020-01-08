@@ -81,4 +81,4 @@ class Category extends CategoryCore
     }
 }
 ```
-- **self::$definition['fields']['field_name']** add field_name array in CategoryCore::$definition array.
+- **self::$definition['fields']['field_name']** add a new array named **field_name** CategoryCore::$definition array.
